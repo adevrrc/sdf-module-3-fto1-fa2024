@@ -92,17 +92,12 @@ else:
 
 # Conditional Operator
 # Syntax: operand(value) if operand(boolean_express) else operand(value)
-
-# Java: boolean_exp ? true_value : false_value
-
 name = "Jason"
-
 length_description = "long" if len(name) > 6 else "short"
 
 print(f"{name} your name is {length_description}.")
 
 # Membership Operator
-
 names = ["Damien", "James", "Kirk", "Lars"]
 
 if name not in names:
