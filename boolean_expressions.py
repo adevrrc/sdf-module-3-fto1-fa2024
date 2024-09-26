@@ -1,37 +1,29 @@
 """
 Description: A script to demonstrate boolean expressions.
-Author:
-Date:
+Author: Damien Altenburg
+Date: 2024-9-23
 Usage: python boolean_expressions.py
 """
+age: int = 25
+name: str = "Damien"
 
-# Literals
+# Boolean literals
 print(True)
 print(False)
 
-# Java: true, false
+# Boolean variables
+is_damien_cool: bool = True
+print(is_damien_cool)
 
-# Variables
-is_damien_here: bool = True
-print(is_damien_here)
-print(type(is_damien_here))
-
-# Functions
-name: str = "Damien"
-
+# Boolean Functions
 print(name.isalpha())
 print(name.isdigit())
 
-is_alphabetic: bool = name.isalpha()
-print(is_alphabetic)
-
-# Operators
-# Comparison Operators
-age: int = 10
-
+# Comparison Operators (Boolean Operations)
 print(age == 25)
-print(age != 25)
-print(age < 35)
+print(age == 35)
+print(age != 35)
+print(age < 14)
 print(age <= 25)
-print(age > 56)
-print(age >= 2)
+print(age > 25)
+print(age >= 25)

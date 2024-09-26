@@ -1,19 +1,23 @@
 """
 Description: A script to demonstrate the while loop.
-Author:
-Date:
+Author: Damien Altenburg
+Date: 2024-9-26
 Usage: python while_loop.py
 """
-new_password = "new_password"
-password_confirmation = "password_confirmation"
+successfully_confirmed: bool = False
 
-while new_password != password_confirmation:
-    new_password = input("Enter the new password: ")
+# Syntax
+# while boolean_expression:
+#     statement(s)
+while not successfully_confirmed:
+    password = input("Enter your new password: ")
 
-    password_confirmation = input("Confirm the password: ")
+    password_confirmation = input("Confirm: ")
 
-    # when the password is not confirmed
-    if new_password != password_confirmation:
-        print("Passwords did not match. Try again.")
-    else:
-        print("Password updated!")
+    successfully_confirmed = password == password_confirmation
+
+    confirmation_message = \
+        "Confirmation was not successful. Please try again." \
+        if not successfully_confirmed else "Password updated."
+
+    print(confirmation_message)
