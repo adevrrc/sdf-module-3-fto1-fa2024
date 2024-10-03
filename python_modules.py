@@ -27,7 +27,7 @@ print(math.sqrt(64))
 # Rounds up to the nearest integer
 print(math.ceil(1.4))
 
-# Rounds down to the nearest integer
+# Rounds down to the nearest integer 
 print(math.floor(1.4))
 
 radius: float = 3.4
